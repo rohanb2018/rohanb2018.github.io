@@ -1,96 +1,113 @@
-<!-- Basic template taken from Mozilla foundation HTML guide-->
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Rohan Banerjee</title>
-  </head>
-  <body>
-    <h1>Rohan Banerjee</h1>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>John Doe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="#">Projects</a></li>
+				  <li><a href="#publications">Publications</a></li> 
+				  <li><a href="#">CV</a></li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  
+  <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Entries Column -->
+            <div class="col-md-8" style="height: 100vh;">
+                
+                <!-- Main Image -->
+                <img class="img-responsive" src="photo.gif" alt=""><br>
+                
+                <div style="margin-top:3%; text-align:justify;">                
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div> 
+
+            <!-- Contact Info on the Sidebar -->
+            <div class="col-md-4">
+                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>John Doe</b></div><br>
+                <p><b>john at doe.com</b><br>
+                <p>Random Department<br>
+                University of Randomness<br>
+                Street<br>
+                City <br>
+                Country<br>
+                </p>
+            </div>
+            
+            
+            <!-- Links on the Sidebar -->
+            <div class="col-md-4" style="margin-top:2%">
+              <dd><a href="#">Google Scholar</a></dd> 
+              <dd><a href="#">Twitter</a></dd>
+              <dd><a href="#">LinkedIn</a></dd>
+            </div>
+            
+            
+            <!-- Publications -->
+            <div class="col-md-8" style="height: 100vh;">    
+                <h2 id="publications">Publications</h2>
+                
+                <strong>Peer-reviewed</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
+                </ul>
+            
+                <strong>Technical Reports</strong><br/>
+                <ul>
+                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+
+    </div>
+    <!-- /.container -->
     
-    <img src="pics/profilepic.jpeg" height="200px" />
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    
+</body>
 
-    <h2>About me</h2>
-    <p> I am a first-year PhD student in the Computer Science department at <a href="http://www.cs.cornell.edu">Cornell University</a>. My primary research interests are in
-    the areas of Bayesian modeling and inference, reinforcement learning, natural language
-    understanding, and other applications of machine learning to robotics.</p>
-    <p>Previously, I was a Research Engineer in <a href="https://www.csail.mit.edu">CSAIL</a> at MIT, working in the
-    <a href="https://www.csail.mit.edu/research/distributed-robotics-laboratory">Distributed Robotics Laboratory</a>
-    under <a href="http://danielarus.csail.mit.edu">Prof. Daniela Rus</a>. My primary work focused on autonomous vehicle algorithm validation and testing
-    using the <a href="http://carla.org">CARLA</a> autonomous driving simulator, focusing on algorithms such as
-    vehicle navigation using sparse topological maps, dynamic obstacle avoidance, and visual end-to-end learning. I also supported projects
-    relating to the <a href="https://www.toyota-global.com/innovation/partner_robot/robot/">Toyota Human Support Robot (HSR)</a> platform
-    in the areas of natural language understanding and high-level task execution.
-    </p>
-   
-    <p> Before that, I was an M.Eng. student in the Distributed Robotics Laboratory under the supervision of Prof. Daniela Rus.
-        My M.Eng. thesis focused on developing CARLA into a useful platform for validating autonomous driving
-        algorithms. I was also a SuperUROP in the <a href="http://groups.csail.mit.edu/sls/">Spoken Language Systems</a> group at MIT under the supervision of <a href="https://people.csail.mit.edu/jrg/">Dr. Jim Glass</a>,
-        and a UROP in the <a href="http://acl.mit.edu">Aerospace Controls Laboratory</a> under the supervision of Dr. Golnaz Habibi
-        and <a href="http://www.mit.edu/~jhow/">Prof. Jonathan How</a>.
-    </p>
-
-    <h2>Education</h2>
-
-    <p>M.Eng., Electrical Engineering and Computer Science (MIT), 2019
-        <br/> Thesis title: <i>Development of a Simulation-Based Platform for Autonomous Vehicle Algorithm Validation </i>
-    </p>
-    <p>S.B., Electrical Engineering and Computer Science (MIT), 2018</p>
-
-
-    <h2>Projects</h2>
-    <ul>
-        <li>3D Point Cloud Clustering Using Small-Variance Asymptotics [6.882, Spring 2018] </li>
-        <ul>
-            <li> Authors: Rohan Banerjee </li>
-            <li> Abstract: Robotic mapping and localization problems rely upon building an accurate model of the environment based on available sensor data (mapping) and using landmarks in the environment to accurately determine the position of the robot (localization). Point clouds, which are collections of 3D points, are a common data format generated from 3D LIDAR sensors. In order to make point cloud data useful to mapping and localization algorithms, we need to meaningfully characterize the structure of the point clouds in a low-dimensional way.
-
-            As a first step towards characterizing point cloud structure, we apply small-variance asymptotics clustering algorithms to two Dirichlet Process models <!-- from [5] --> - a DP-GMM model, which is used to model point densities, and a DP-vMF-MM model, which is used to model surface densities. We then verify the robustness of inference for both models by measuring the sensitivity of inference to changes in the underlying number of clusters and in the noise associated with each cluster in toy datasets. </li>
-            <!-- include report -->
-        </ul>
-        <!-- 6.141: include link to website, final project video, come up with my own "abstract" -->
-        <li>Team Project: Robotics: Science and Systems I [6.141, Spring 2018] </li>
-        <li>Team Project: Detecting and Reducing Duplicate Posts Among StackExchange Users [6.867, Fall 2017]</li>
-        <ul>
-            <li> Authors: Rohan Banerjee, Ryan Chung, Isaac Kontomah </li>
-            <li> Abstract: This paper seeks to classify duplicate questions in a QA forum. We use the StackExchange dataset, which is comprised of data from 12 different fields including android development, english language, gaming, gis, mathematica, physics, programming, statistics, tex, unix, web design, and wordpress. We tested features pulled from the title, body and author of the post to predict duplicates. Our best model, the neural network, was able to classify testset duplicate posts with a maximum accuracy of 86.95% across all subforums. We were able to identify these duplicates using classifiers trained on these features. We assessed the importance of adding reputation features, namely user reputation and post score, by comparing the performance of our system both with and without these features. Using this tool, we hope to identify potential duplicate posts in StackExchange for moderators to assess and streamline this QA platform. </li>
-            <!-- include report (if teammates are ok with it?) -->
-        </ul>
-        <li>Towards the Development of a Conversational Robotic System with Audio-Visual Localization Capabilities [SuperUROP, 2017]</li>
-        <ul>
-            <li> Authors: Rohan Banerjee, Jim Glass </li>
-            <li> Abstract: Robotic systems that can interact with humans have the potential to fill an important niche in situations that are inherently time-consuming or tedious for humans, such as in healthcare. One component of the human-robot interaction problem involves robotic participation in human spoken conversation, where a robot would effectively respond to verbal instructions and non-verbal cues. In this study, we aim to demonstrate the feasibility of a static system that can localize a speaking subject using a combination of audio and visual localization techniques. We show that the Voice Activity Detector module has the potential for a high speech classification accuracy under certain conditions, while the visual and audio localization modules exhibit tradeoffs between accuracy and range that motivate sensor fusion techniques for producing a source estimate. These results lay the groundwork for the future development of a low-cost enhancement to the Baxter robotic research platform that performs speaker localization, which would allow the platform to engage in conversations with humans. </li>
-            <!-- SuperUROP project: include final paper -->
-        </ul>
-    </ul>
-    <h2>Teaching Experience</h2>
-    <ul>
-        <li>
-            Fall 2020: TA for Introduction to Machine Learning (CS 4780/5780)
-        </li>
-        <li>
-            Spring 2018, Fall 2018: TA for Introduction to Probability (6.041/6.431)
-        </li>
-    </ul>
-    <h2>CV/Resume</h2>
-    <p> NOTE: last updated in Fall 2019. </p>
-    <ul>
-        <li> 
-            <a href="docs/Banerjee_CV.pdf"> CV </a>
-        </li>
-        <li>
-            <a href="docs/Banerjee_Resume.pdf"> Resume </a>
-        </li>
-    </ul>
-    <h2>Contact</h2>
-        <ul>
-        <li>Email: rbb242 [at] cornell [dot] edu</li>
-        <li><a href="https://www.linkedin.com/in/rohan-banerjee-26722444/">LinkedIn</a> </li>
-        <li><a href="https://github.com/rohanb2018/">GitHub</a>  </li>
-        <li><a href="https://scholar.google.com/citations?user=cxXPYo8AAAAJ&hl=en">Google Scholar</li>
-        </ul>
-  </body>
 </html>
-
-
